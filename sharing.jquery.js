@@ -3,7 +3,7 @@
  * @description: simple jquery based sharing library. Currently supported networks: facebook, twitter, pinterest
  */
 (function( $ ) {
-    $.fn.share = function( type ) {
+    $.fn.sharing = function( type ) {
         this.each(function() {
             var element = this;
             $(this).click(function(e) {
