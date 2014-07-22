@@ -1,6 +1,6 @@
 /**
  * @author: Jiri Spacek, 2014
- * @description: simple jquery based sharing library. Currently supported networks: facebook, twitter, pinterest
+ * @description: Simple jQuery based sharing library. Currently supported social networks: Facebook, Twitter, Pinterest
  */
 (function( $ ) {
     $.fn.sharing = function( type ) {
