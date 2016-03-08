@@ -1,6 +1,6 @@
 /**
  * @author: Jiri Spacek, 2014
- * @description: Simple jQuery based sharing library. Currently supported social networks: Facebook, Twitter, Pinterest
+ * @description: Simple jQuery based sharing library. Currently supported social networks: Facebook, Twitter, Pinterest, Linkedin, Google+
  */
 (function( $ ) {
     $.fn.sharing = function( type ) {
@@ -21,6 +21,10 @@
                     window.open('https://twitter.com/share?url=' + url, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
                 } else if(type == "pinterest") {
                     window.open('http://www.pinterest.com/pin/create/button/?url=' + url, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
+                } else if(type == "googleplus") {
+                    window.open('https://plus.google.com/share?url=' + url, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
+                } else if(type == "linkedin") {
+                    window.open('https://www.linkedin.com/cws/share?url=' + url, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
                 }
             });
         });
